@@ -1,0 +1,39 @@
+name: flutter_mui
+description: A new flutter plugin project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cached_network_image: ^2.2.0+1
+  flutter_svg: ^0.19.3
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  fonts:
+    - family: poppins
+      fonts:
+        - asset: fonts/poppins_regular.ttf
+    - family: poppins_bold
+      fonts:
+        - asset: fonts/poppins_bold.ttf
+    - family: poppins_medium
+      fonts:
+        - asset: fonts/poppins_medium.ttf
+    - family: timesNewRomanPSMT
+      fonts:
+        - asset: fonts/TimesNewRomanPSMT.ttf
+  plugin:
+    platforms:
+      android:
+        package: com.example.flutter_mui
+        pluginClass: FlutterMuiPlugin
+      ios:
+        pluginClass: FlutterMuiPlugin
